@@ -9,12 +9,14 @@ default: &default
   database: gregit
   pool: 5
   timeout: 5000
+  encoding: unicode
 
 development:
     adapter: postgresql
     database: gregit
     pool: 5
     timeout: 5000
+    encoding: unicode
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,9 +26,11 @@ test:
     database: gregit_test
     pool: 5
     timeout: 5000
+    encoding: unicode
 
 production:
     adapter: postgresql
     database: gregit
     pool: 5
     timeout: 5000
+    encoding: unicode
